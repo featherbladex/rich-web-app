@@ -1,1 +1,11 @@
-github.com/user/repo/main/db.json
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "hello"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
