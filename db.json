@@ -1,13 +1,1 @@
-github.com/featherbladex/rich-web-app/db.json
 
-{
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
-}
