@@ -1,3 +1,5 @@
+//global query selectors
+//
 const noteStorage= document.querySelector("note-display");
 const form= document.querySelector("form");
 
@@ -9,6 +11,10 @@ class addNote{
     } 
 }
 
+//adding a note to the list
+
+
+
 function addNotetoList(note){
     const newUINote = document.createElement("div");
     newUINote.classList.add("note");
@@ -19,6 +25,7 @@ function addNotetoList(note){
 
 }
 
+//submit note
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
     const titleInput = document.querySelector("#title")
@@ -34,3 +41,7 @@ form.addEventListener("submit",(e)=>{
     }
 
 })
+
+/*var button = document.querySelector("add")
+Rx.Observable.fromEvent(button, 'click')
+  .subscribe(() => console.log('Clicked!'));*/
