@@ -44,7 +44,10 @@ form.addEventListener("submit",(e)=>{
 
 
 /*var button = document.querySelector("add")
-Rx.
+var observable = Rx.Observable.create(function (submit){
+    
+}
+
 Rx.Observable.fromEvent(button, 'click')
   .subscribe(() => console.log('Clicked!'));
   
