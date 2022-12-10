@@ -1,0 +1,49 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	gap: 0px;
+	background-color: white;
+	padding: 0px;
+	border:solid;
+	border-width:1px;
+  }
+  .column{
+	  border: 1px solid black;
+	  
+  }
+  
+  
+  
+  @media(max-width: 600px) {
+	.grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 0px;
+	background-color: white;
+	padding: 0px;
+	border:solid;
+	border-width:1px;
+  }
+  .column{
+	  border: 1px solid black;
+	  
+  }
+  }
+  
+  
+   @media(max-width: 360px) {
+	.grid-container {
+	display: grid;
+	grid-template-columns: auto;
+	gap: 0px;
+	background-color: white;
+	padding: 0px;
+	border:solid;
+	border-width:1px;
+	}
+  .column{
+	  border: 1px solid black;
+	  
+	}
+	
+	}
