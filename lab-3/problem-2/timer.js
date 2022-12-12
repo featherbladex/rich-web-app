@@ -1,5 +1,4 @@
-const{ fromEvent, Subject,merge } = rxjs;
-
+const{ fromEvent, Subject,merge,mapTo,scan,takeWhile,startWith,takeUntil,repeat,switchMap} = rxjs;
 
 const time = document.querySelector('h3')
 
@@ -14,7 +13,7 @@ const stopClick = fromEvent(stopB,'click')
 const init_val = 10
 
 startClick.subscribe(()=>console.log("started"))
-merge(startClick.pipe(mapTo(true)), pauseB.pipe(mapTo(false)))
+merge(startClick.pipe(mapTo(true)), pauseClick.pipe(mapTo(false)))
     .pipe(
         switchMap(shouldStart => (shouldStart ? interval(1000) : EMPTY)),
         mapTo(-1),
