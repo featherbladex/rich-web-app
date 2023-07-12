@@ -1,0 +1,8 @@
+.entry{
+    container-name: entry;
+    container-type: size;
+  }
+  
+  @container entry(){
+    
+  }
