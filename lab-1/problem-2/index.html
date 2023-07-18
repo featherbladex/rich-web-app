@@ -2,20 +2,25 @@
 <html>
 <head>
 <title>Note Taker app</title>
-
+<link rel="stylesheet" href="note.css">
 </head>
 <body>
-    <div >
-        <form class="entry">
-            <h3>Note Taker App</h3>
+    <div class="container">
+        <div class="entry">
+            <form>
+             <h3>Note Taker App</h3>
+
             <label for="title">Note Title</label>
             <input type="text" id="title" placeholder="enter note title">
-            <label for="note">Note</label><br>
-            <textarea name="note" id = "note" cols="30" rows="10" placeholder="enter note"></textarea>
+            <br>
 
-            <button id="add">Add note</button>
-        
-        </form>
+            <label for="note">Note</label>
+            <br>
+            <textarea name="note" id = "note" cols="30" rows="10" placeholder="enter note"></textarea>
+            <br>
+            <button id="add" type ="submit" onclick="display()">Add note</button>   
+            </form>
+        </div>
     </div>
     <div class="note-display">
 
