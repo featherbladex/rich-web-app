@@ -1,12 +1,31 @@
 <!DOCTYPE html> 
 <html>
     <head>
-       
-        <script src="memo.js"></script>
+       <link rel="stylesheet" href="memo.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <div id="mydiv"></div>
-    </body>
-    
+        <h1>Note App</h1>
+        <div class="container">
+            <div class="Note_input">
+                
+                <label for="note_title">Title</label>
+                <input id="note_title" type="text"placeholder="enter title"> 
+                <br>
+
+                <label for="note_content">Note</label><br>
+                <textarea name="note_content" id = "note_content" cols="30" rows="10" placeholder="enter note"></textarea>
+                <br>
+
+                <button id="add">Add note</button>
+                <br>
+
+                <script src="memo_2.js"></script>
+            </div> 
+            <h2>Notes</h2>
+
+            
+        </div>
+    </body>   
 </html>

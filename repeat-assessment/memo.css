@@ -1,0 +1,10 @@
+.display{
+    border: 1px solid black;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    margin-left: 20px;
+    background-color: lightblue;
+    list-style-type: none;
+}
