@@ -1,4 +1,3 @@
-
 let add_button = document.getElementById("add");
 let input_title = document.getElementById("note_title");
 let input_content = document.getElementById("note_content");
@@ -48,15 +47,19 @@ function delete_note(noteID){
 function edit_note(noteID,note_title,note_content){
     updateID = noteID;
     isUpdate = true;
-    
+    add_button.innerHTML = "update note";
     input_title.value = note_title;
     input_content.value = note_content;
 
+    
 }
 
 
 add_button.addEventListener("click", e =>{
     e.preventDefault();
+    add_button.innerHTML = "Add note";
+   
+
     let note_title = input_title.value;
     let note_content = input_content.value;
 
@@ -72,12 +75,11 @@ add_button.addEventListener("click", e =>{
             date: `${day} / ${month} / ${year}`
         }
 
-        if (!isUpdate)
-        {
+        if (isUpdate == false) {
             notes.push(note_info);
-        } 
-        else {
+        } else {
             notes[updateID] = note_info;
+            isUpdate = false;
         }
         
         localStorage.setItem("notes",JSON.stringify(notes));
@@ -88,4 +90,3 @@ add_button.addEventListener("click", e =>{
     }
    
 });
-
