@@ -3,6 +3,9 @@
     <head>
        <link rel="stylesheet" href="memo.css">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     </head>
 
     <body>
@@ -17,15 +20,14 @@
                 <label for="note_content">Note</label><br>
                 <textarea name="note_content" id = "note_content" cols="30" rows="10" placeholder="enter note"></textarea>
                 <br>
-
+                
                 <button id="add">Add note</button>
+                <h2>Notes</h2>
                 <br>
+               
 
                 <script src="memo_2.js"></script>
-            </div> 
-            <h2>Notes</h2>
-
-            
+            </div>           
         </div>
     </body>   
 </html>

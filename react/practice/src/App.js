@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-import note_list from './componants/note-list';
+import {delete_note,edit_note,show} from'./componants/memo_react';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Note App</h1>
+      <div class="container">
+        
+          <div class="Note_input">
+                <label for="note_title">Title</label><br></br>
+                <input id="note_title" type="text"placeholder="enter title"/> 
+                <br></br>
+
+                <label for="note_content">Note</label><br></br>
+                <textarea name="note_content" id = "note_content" cols="30" rows="10" placeholder="enter note"></textarea>
+                <br></br>
+                
+                <button id="add">Add note</button>
+                <h2>Notes</h2>
+          </div>
+      </div>
     </div>
   );
 }

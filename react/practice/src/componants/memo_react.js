@@ -50,15 +50,12 @@ function edit_note(noteID,note_title,note_content){
     add_button.innerHTML = "update note";
     input_title.value = note_title;
     input_content.value = note_content;
-
-    
 }
 
 
 add_button.addEventListener("click", e =>{
     e.preventDefault();
     add_button.innerHTML = "Add note";
-   
 
     let note_title = input_title.value;
     let note_content = input_content.value;
@@ -75,7 +72,7 @@ add_button.addEventListener("click", e =>{
             date: `${day} / ${month} / ${year}`
         }
 
-        if (isUpdate == false) {
+        if (isUpdate === false) {
             notes.push(note_info);
         } else {
             notes[updateID] = note_info;
@@ -90,3 +87,6 @@ add_button.addEventListener("click", e =>{
     }
    
 });
+
+export {delete_note,edit_note,show};
+
