@@ -67,6 +67,7 @@ add_button.addEventListener("click", e =>{
         let year = get_date.getFullYear();
         let hours = get_date.getHours();
         let minutes = get_date.getMinutes();
+        let note_age = getdate.now();
 
         let note_info={
             title: note_title,
