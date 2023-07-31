@@ -65,11 +65,13 @@ add_button.addEventListener("click", e =>{
         let day = get_date.getDate();
         let month = months[get_date.getMonth()];
         let year = get_date.getFullYear();
+        let hours = get_date.getHours();
+        let minutes = get_date.getMinutes();
 
         let note_info={
             title: note_title,
             content: note_content,
-            date: `${day} / ${month} / ${year}`
+            date: `${hours}:${minutes} - ${day} / ${month} / ${year}`
         }
 
         if (isUpdate == false) {
