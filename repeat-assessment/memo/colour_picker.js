@@ -4,7 +4,7 @@ import reactCSS from 'reactcss'
 
 'use strict';
 
-const e = React.createElement;
+
 
 class ColorPicker extends React.Component {
     state = {
@@ -82,5 +82,5 @@ class ColorPicker extends React.Component {
   }
 }
 
-const domContainer = document.querySelector('#colour_picker');
-ReactDOM.render(e(ColorPicker), domContainer);
+const domContainer = document.getElementById('colour_picker');
+ReactDOM.render(<ColorPicker />, domContainer);
