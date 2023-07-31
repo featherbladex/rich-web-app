@@ -72,7 +72,7 @@ add_button.addEventListener("click", e =>{
             date: `${day} / ${month} / ${year}`
         }
 
-        if (isUpdate === false) {
+        if (isUpdate == false) {
             notes.push(note_info);
         } else {
             notes[updateID] = note_info;
@@ -87,6 +87,4 @@ add_button.addEventListener("click", e =>{
     }
    
 });
-
-export {delete_note,edit_note,show};
 

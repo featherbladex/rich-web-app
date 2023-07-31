@@ -5,9 +5,10 @@ function App() {
   return (
     <div className="App">
       <h1>Note App</h1>
-      <div class="container">
+
+      <div className="container">
         
-          <div class="Note_input">
+          <div className="Note_input">
                 <label for="note_title">Title</label><br></br>
                 <input id="note_title" type="text"placeholder="enter title"/> 
                 <br></br>
@@ -18,6 +19,7 @@ function App() {
                 
                 <button id="add">Add note</button>
                 <h2>Notes</h2>
+                
           </div>
       </div>
     </div>
