@@ -28,6 +28,7 @@ function App() {
   const onDeleteNote =(del_id)=>{
     setNotes(notes.filter((note)=>note.id !== del_id))
   };
+  
 
   const onEditNote = (updatedNotes)=>{
     const updatedNotesArray = notes.map((note) =>{
@@ -39,6 +40,8 @@ function App() {
     
     setNotes(updatedNotesArray)
   };
+
+
 
  
 
